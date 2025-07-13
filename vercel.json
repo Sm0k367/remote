@@ -1,78 +1,24 @@
 {
   "version": 2,
+  "name": "epictech-ai-knowledge-base",
   "builds": [
     {
-      "src": "*index.html",
+      "src": "index.html",
       "use": "@vercel/static"
     },
     {
-      "src": "*script.js",
+      "src": "style.css",
       "use": "@vercel/static"
     },
     {
-      "src": "*style.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*manifest.json",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*robots.txt",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*sitemap.xml",
+      "src": "script.js",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/manifest.json",
-      "dest": "/manifest.json",
-      "headers": {
-        "Cache-Control": "public, max-age=3600, s-maxage=3600"
-      }
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt",
-      "headers": {
-        "Cache-Control": "public, max-age=3600, s-maxage=3600"
-      }
-    },
-    {
-      "src": "/script.js",
-      "dest": "/script.js",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml",
-      "headers": {
-        "Cache-Control": "public, max-age=3600, s-maxage=3600"
-      }
-    },
-    {
-      "src": "/style.css",
-      "dest": "/style.css",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "/terms",
-      "dest": "/terms.html"
-    },
-    {
-      "src": "/privacy",
-      "dest": "/privacy.html"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html"  // Fallback to index.html for SPA-like behavior, or change to "/404.html" if you have one
+      "dest": "/index.html"
     }
   ]
 }
