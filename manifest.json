@@ -1,0 +1,25 @@
+{
+  "name": "EpicTech.AI - Revolutionary AI Solutions",
+  "short_name": "EpicTech.AI",
+  "description": "Transform your business with cutting-edge AI solutions. Enterprise-grade artificial intelligence tools, automation, and analytics for digital transformation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": [
+    "business",
+    "productivity",
+    "technology"
+  ],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
