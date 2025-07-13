@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "name": "your-static-site-name",
+  "name": "remote",
   "builds": [
     {
       "src": "index.html",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static"
+    },
+    {
+      "src": "style.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
